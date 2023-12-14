@@ -1,5 +1,5 @@
 Open Source SW 
-TermProject(Teamd:17)
+TermProject(Team:17)
 Name: 최수혁
 박서현
 김준희
