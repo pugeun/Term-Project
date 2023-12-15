@@ -25,16 +25,7 @@ def find_hand_contour(frame):
     return max_contour
 
 def get_hand_gesture(approx):
-    # 손 제스처를 식별
-    if len(approx) == 4:
-        return "Paper"
-    elif len(approx) == 12:
-        return "Scissors"
-    elif len(approx) > 15:
-        return "Rock"
-    else:
-        return "Unknown"
-
+    
 def main():
     cap = cv2.VideoCapture(0)
 
