@@ -17,23 +17,8 @@ def find_contours(frame):
     return contours
 
 def find_hand_contour(frame):
-    contours = find_contours(frame)
-
-    # 손의 윤곽 중 가장 큰 것 선택
-    max_contour = max(contours, key=cv2.contourArea, default=None)
-
-    return max_contour
 
 def get_hand_gesture(approx):
-    # 손 제스처를 식별
-    if len(approx) == 4:
-        return "Paper"
-    elif len(approx) == 12:
-        return "Scissors"
-    elif len(approx) > 15:
-        return "Rock"
-    else:
-        return "Unknown"
 
 def main():
     cap = cv2.VideoCapture(0)
